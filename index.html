@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+  apiKey: "AIzaSyBeJi6lTWDKtRFDuMrVewjcNfUsoIigCK8",
+  authDomain: "data-eebdd.firebaseapp.com",
+ 
+  projectId: "data-eebdd",
+  
+  storageBucket: "data-eebdd.appspot.com",
+  databaseURL: "https://data-eebdd-default-rtdb.firebaseio.com/",
+  messagingSenderId: "417632893187",
+  appId: "1:417632893187:web:482afe1038cdd411a25136",
+  measurementId: "G-BRJZT8VLH2"
+};
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body>
+
+    <div>
+        <input id="name" type="text" placeholder="name">
+        <br />
+        <input id="country" type="text" placeholder="country">
+
+        <br />
+        <input id="city" type="text" placeholder="city">
+        <br>
+        <button onclick="saveData()">Save Data</button>
+    </div>
+   
+    <script  src="app.js"></script>
+</body>
+
+</html>
